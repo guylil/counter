@@ -12,9 +12,9 @@
         <v-text-field
           label="Enter password"
           :append-icon="iconShow ? 'visibility_off' : 'visibility'"
-          :type="iconShow ?  'password' : 'text'"
-          @click:append="iconShow = !iconShow"
-          @keypress.enter="checkPassword()"
+          :type="iconShow ? 'password' : 'text'"
+          @click:append="iconShow = !iconShow;"
+          @keypress.enter="checkPassword();"
           v-model="password"
         >
         </v-text-field>
@@ -46,7 +46,6 @@ export default {
       this.counter++;
     },
     checkPassword: function() {
-        console.log('checkPassword')
       if (this.password === "chert") {
         this.showEdit = true;
       }
